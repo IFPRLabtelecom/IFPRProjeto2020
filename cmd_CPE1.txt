@@ -1,0 +1,56 @@
+#Executar o script no diretório switch(config)#
+#Criar VLAN conforme posição do cliente no splitter
+#Por exemplo, para o assinante 17:
+
+#ACESSO REMOTO
+#Criar vlan 4 com o nome OEM
+#O endereço IP CGNAT depende da região e assinante (100.65.R.A/24), 
+#por exemplo: para o assinante 17 da região 1 tem-se o IP 100.65.1.17/24
+#o gateway corresponde ao endereço 100.65.R.254/24, onde R é a região
+
+#HOSTNAME
+#Colocar o nome corresponde a Rx_CPE1_Axy, onde x é a região e Axy o assinante
+#Por exemplo, para o assinante 17 da região1: hostname R1_CPE1_A17
+
+#===========================================================================
+#Parte 1
+#===========================================================================
+
+vlan 141
+name DADOS
+exit
+
+int f3/1
+switchport mode access
+switchport access vlan 141
+exit
+
+vlan 4
+name OEM
+exit
+
+ip default-gateway 100.65.2.254
+
+int vlan 4
+ip add 100.65.2.41 255.255.255.0
+no shut
+exit
+
+hostname R2_CPE1_A41
+
+username OEMGUSTAVO privilege 15 secret TESTE123
+ip domain-name ISPGUSTAVO
+crypto key generate rsa
+
+#===========================================================================
+#PARTE 2: informar chave 2048
+#===========================================================================
+
+ip ssh version 2
+ip ssh time-out 30
+ip ssh authentication-retries 3
+line vty 0 15
+transport input ssh 
+login local
+end
+wr

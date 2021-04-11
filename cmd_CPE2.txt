@@ -1,0 +1,113 @@
+#Executar o script no diretório Router(config)#
+
+
+#hostname Rx corresponde a região, por exemplo R1, assinante da região
+#e Axy o assinante, por exemplo R1_CPE2_A25, seria o assinante 25 da região 1.
+
+#encapsulation dot1Q 1xy é a VLAN do assinante na região Rx
+#Por exemplo, para o assinante 25 da R1, encapsulation dot1Q 125
+#Por exemplo, para o assinante 50 da R3, encapsulation dot1Q 150
+
+#dot11 ssid ISP_Rx_Axy, onde Rx e Axy é região e assinante
+
+hostname R3_CPE2_A32
+
+int g0/0/0
+description WAN
+no shut
+exit
+
+int g0/0/0.3
+description WAN_DADOS
+ip nat outside
+encapsulation dot1Q 132
+ip add dhcp
+no shut
+exit
+
+int f0/0
+description LAN1
+ip nat inside
+ip add 192.168.0.254 255.255.255.0
+no shut
+exit
+
+int f0/1
+description LAN2
+ip nat inside
+ip add 192.168.1.254 255.255.255.0
+no shut
+exit
+
+ip dhcp pool LAN1
+network 192.168.0.0 255.255.255.0
+default-router 192.168.0.254
+dns-server 192.168.0.254
+exit
+
+ip dhcp pool LAN2
+network 192.168.1.0 255.255.255.0
+default-router 192.168.1.254
+dns-server 192.168.1.254
+exit
+
+dot11 ssid ISP_R3_A32
+authentication open 
+authentication key-management wpa
+wpa-psk ascii ISP_W_R3_A32
+guest-mode 
+exit
+
+int dot11Radio 0/1/0
+description WLAN1_2G
+ip nat inside
+ip add 192.168.2.254 255.255.255.0
+encryption mode ciphers aes-ccm 
+ssid ISP_R3_A32
+no shut
+exit
+
+int dot11Radio 0/1/1
+description WLAN2_5G
+ip nat inside
+ip add 192.168.3.254 255.255.255.0
+encryption mode ciphers aes-ccm 
+ssid ISP_R3_A32
+no shut
+exit
+
+ip dhcp pool WLAN1
+network 192.168.2.0 255.255.255.0
+default-router 192.168.2.254
+dns-server 192.168.2.254
+exit
+
+ip dhcp pool WLAN2
+network 192.168.3.0 255.255.255.0
+default-router 192.168.3.254
+dns-server 192.168.3.254
+exit
+
+ip nat inside source list 1 interface g0/0/0.3 overload
+access-list 1 permit any
+
+ip ssh version 2
+ip ssh time-out 30
+ip ssh authentication-retries 3
+line vty 0 15
+transport input ssh 
+login local
+exit
+do wr
+
+username OEMGUSTAVO privilege 15 secret TESTE123
+ip domain-name ISPGUSTAVO
+crypto key generate rsa
+
+
+
+
+
+
+
+

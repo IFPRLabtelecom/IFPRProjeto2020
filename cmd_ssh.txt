@@ -1,0 +1,25 @@
+
+vlan database
+vlan 4 name OEM
+exit
+conf t
+ip default-gateway 100.65.3.254
+int vlan 4
+ip add 100.65.3.64 255.255.255.0
+no shut
+exit
+
+
+
+username OEMGUSTAVO privilege 15 secret TESTE123
+ip domain-name ISPGUSTAVO
+crypto key generate rsa
+
+ip ssh version 2
+ip ssh time-out 30
+ip ssh authentication-retries 3
+line vty 0 15
+transport input ssh 
+login local
+end
+wr

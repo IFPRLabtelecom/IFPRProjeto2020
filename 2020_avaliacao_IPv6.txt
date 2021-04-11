@@ -1,0 +1,88 @@
+#==========================================================
+# INSTITUTO FEDERAL DO PARANÁ - LABTELECOM - PROJETO DADOS
+# NOME: GUSTAVO THEODORO LASKOSKI
+#==========================================================
+
+2001:db8:216:RCCS::/64
+2001:db8:216:R000::/52
+2001:db8:216:RCC0::/60
+2001:db8:216:RCC2::/64
+
+1) Anote o seu prefixo IPv6 que deverá ser utilizado 
+no seu projeto de rede 2001:db8:216::/48 com base
+no documento 02-Relação de equipes e setores.
+
+2) Defina os seguintes endereços IPv6 da região 0.
+ REDE: 2001:db8:216:0002::/64 (VLAN2- IPCAM)
+ REDE: 2001:db8:216:0003::/64 (VLAN3- DADOS) = 2001:db8:216:3::/64                                                                       
+R0_Gw: 2001:db8:216:0003::FFFF/64 = 2001:db8:216:3::FFFF/64                                                                        
+R0_01: 2001:db8:216:0003::1/64   =  2001:db8:216:3::1/64                                                                         
+R0_02: 2001:db8:216:0003::2/64   =  2001:db8:216:3::2/64                                                                         
+R0_03: 2001:db8:216:0003::3/64   =  2001:db8:216:3::3/64                                                                         
+
+3) Defina os seguintes endereços IPv6 da Região 1, nome: 
+Interface de acesso: R0_01    IPv6: 2001:db8:216:3::1                                                  
+ REDE: 2001:db8:216:1000::/64                                                                        
+R1_Gw: 2001:db8:216:1000::FFFF/64                                                                        
+R1_01: 2001:db8:216:1000::1/64                                                                      
+R1_64: 2001:db8:216:1000::64/64                      
+
+ipv6 route 2001:db8:216:1000::/52  2001:db8:216:3::1                                                  
+
+4) Defina os seguintes endereços IPv6 da Região 2, nome:
+Interface de acesso: R0_02 IPv6: 2001:db8:216:3::2                                                  
+ REDE: 2001:db8:216:2000::/64                                                                        
+R2_Gw: 2001:db8:216:2000::FFFF/64                                                                        
+R2_01: 2001:db8:216:2000::1/64                                                                        
+R2_44: 2001:db8:216:2000::44/64                                                                        
+
+5) Defina os seguintes endereços IPv6 da Região 3, nome:
+Interface de acesso: R0_03 IPv6: 2001:db8:216:3::3                                                  
+ REDE: 2001:db8:216:3000::/64                                                                         
+R3_Gw: 2001:db8:216:3000::FFFF/64                                                                        
+R3_01: 2001:db8:216:3000::1/64                                                                        
+R3_23: 2001:db8:216:3000::23/64                                                                   
+
+6) Assinante 01 da região 1:
+Interface de acesso:         IPv6:
+ REDE_01:
+R1_A01_G:
+
+7) Assinante 64 da região 1:
+Interface de acesso: R1_01 IPv6: 2001:db8:216:1000::1/64
+ REDE_01: 2001:db8:216:1010::/64
+R1_A64_G: 2001:db8:216:1010::FFFF/64
+
+ipv6 route 2001:db8:216:1010::/60 2001:db8:216:1000::1
+
+ipv6 route 2001:db8:216:1010::/64 2001:db8:216:1000::1
+ipv6 route 2001:db8:216:1011::/64 2001:db8:216:1000::1
+ipv6 route 2001:db8:216:1012::/64 2001:db8:216:1000::1
+ipv6 route 2001:db8:216:1013::/64 2001:db8:216:1000::1
+ipv6 route 2001:db8:216:1014::/64 2001:db8:216:1000::1
+...
+ipv6 route 2001:db8:216:101F::/64 2001:db8:216:1000::1
+
+
+8) Assinante 44 da região 2:
+Interface de acesso: R2_44 IPv6: 2001:db8:216:2000::44
+  REDE_01: 2001:db8:216:2440::/64
+R2_A64_G1: 2001:db8:216:2440::FFFF/64
+  REDE_02: 2001:db8:216:2441::/64
+R2_A64_G2: 2001:db8:216:2441::FFFF/64
+
+9) Assinante 23 da região 3:
+Interface de acesso: R3_23  IPv6: 2001:db8:216:3000::23/64
+  REDE_01: 2001:db8:216:3230::/64
+R3_A23_G1: 2001:db8:216:3230::FFFF/64
+  REDE_02: 2001:db8:216:3231::/64
+R3_A23_G2: 2001:db8:216:3231::FFFF/64
+  REDE_03: 2001:db8:216:3232::/64
+R3_A23_G3: 2001:db8:216:3232::FFFF/64
+
+#==========================================================
+# INSTITUTO FEDERAL DO PARANÁ - LABTELECOM - PROJETO DADOS
+# Enviar as respostas para: gustavo.laskoski@ifpr.edu.br
+#==========================================================
+
+

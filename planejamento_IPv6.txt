@@ -1,0 +1,173 @@
+======================================================================
+    INSTITUTO FEDERAL DO PARANÁ - LABTELECOM     PROJETO FINAL
+    PROF. GUSTAVO THEODORO LASKOSKI, D. Sc.     PLANEJAMENTO IPv6
+======================================================================
+
+2001:db8:216::/48          0= 0000, 1= 0001, 2= 0010 .... F= 1111 (0 a F)
+
+2001:0db8:0216:0000:0000:0000:0000:0000/48 ... /64
+RRRR:RRRR:RRRR:xyzw:HHHH:HHHH:HHHH:HHHH
+
+#----------------------------------------------------------------------
+x= região
+0= região 0, 2001:db8:216:0000::/52 região do provedor  
+1= região 1, 2001:db8:216:1000::/52 
+2= região 2, 2001:db8:216:2000::/52 
+3= região 3, 2001:db8:216:3000::/52 
+...
+9= região 9, 2001:db8:216:9000::/52 
+A= região 10
+B= região 11
+C= região 12
+D= região 13
+E= região 14
+F= região 15
+
+Por exemplo, região 1
+
+2001:db8:216:1000::01, cliente 1
+2001:db8:216:1000::02, cliente 2
+2001:db8:216:1000::03, cliente 3
+2001:db8:216:1000::04, cliente 4
+...
+2001:db8:216:1000::09, cliente 9
+2001:db8:216:1000::0A, livre
+2001:db8:216:1000::0B, livre
+2001:db8:216:1000::0C, livre
+2001:db8:216:1000::0E, livre
+2001:db8:216:1000::0E, livre
+2001:db8:216:1000::0F, livre
+2001:db8:216:1000::10, cliente 10
+2001:db8:216:1000::11, cliente 11
+2001:db8:216:1000::12, cliente 12
+...
+2001:db8:216:1000::18, cliente 18
+2001:db8:216:1000::19, cliente 19
+2001:db8:216:1000::1A, livre
+2001:db8:216:1000::1B, livre
+2001:db8:216:1000::1C, livre
+2001:db8:216:1000::1D, livre
+2001:db8:216:1000::1E, livre
+2001:db8:216:1000::1F, livre
+2001:db8:216:1000::20, cliente 20
+
+2001:db8:216:R000::CC
+R= região
+CC= número do cliente (01 a 64)
+
+#----------------------------------------------------------------------
+
+2001:0db8:0216:0000:0000:0000:0000:0000/48 ... /64
+RRRR:RRRR:RRRR:xyzw:HHHH:HHHH:HHHH:HHHH
+
+#----------------------------------------------------------------------
+
+x= é a região
+yz= é rede do cliente na região x
+
+RRRR:RRRR:RRRR:xyzw:HHHH:HHHH:HHHH:HHHH
+2001:0db8:0216:101S:HHHH:HHHH:HHHH:HHHH
+2001:db8:216:1010::/60
+2001:db8:216:1010::/64 - sub-rede 0
+2001:db8:216:1011::/64 - sub-rede 1
+2001:db8:216:1012::/64 - sub-rede 2
+2001:db8:216:1013::/64 - sub-rede 3
+2001:db8:216:1014::/64 - sub-rede 4
+...
+2001:db8:216:1019::/64 - sub-rede 9
+2001:db8:216:101A::/64 - sub-rede 10
+2001:db8:216:101B::/64 - sub-rede 11
+2001:db8:216:101C::/64 - sub-rede 12
+2001:db8:216:101D::/64 - sub-rede 13
+2001:db8:216:101E::/64 - sub-rede 14
+2001:db8:216:101F::/64 - sub-rede 15
+
+
+Por exemplo, cliente 02 na região 1:
+
+2001:db8:216:1020::/60
+2001:db8:216:1020::/64 - sub-rede 0
+2001:db8:216:1021::/64 - sub-rede 1
+2001:db8:216:1022::/64 - sub-rede 2
+2001:db8:216:1023::/64 - sub-rede 3
+2001:db8:216:1024::/64 - sub-rede 4
+....
+2001:db8:216:1029::/64 - sub-rede 9
+2001:db8:216:102A::/64 - sub-rede 10
+2001:db8:216:102B::/64 - sub-rede 11
+2001:db8:216:102C::/64 - sub-rede 12
+2001:db8:216:102E::/64 - sub-rede 13
+2001:db8:216:102E::/64 - sub-rede 14
+2001:db8:216:102F::/64 - sub-rede 15
+
+Por exemplo, cliente 64 na região 1:
+
+2001:db8:216:1640::/60
+2001:db8:216:1640::/64 - sub-rede 0
+2001:db8:216:1641::/64 - sub-rede 1
+...
+2001:db8:216:164F::/64 - sub-rede 15
+
+
+2001:db8:216:RCCS::/64
+R= região (0 a F)
+CC= Cliente (01 a 64)
+S= sub-rede (0 a F)
+
+
+Por exemplo, defina o endereço IP do cliente 25 na região 03:
+
+REDE: 2001:db8:216:3250::/60
+SR01: 2001:db8:216:3251::/64
+...
+SR10: 2001:db8:216:325A::/64
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

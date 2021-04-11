@@ -1,0 +1,384 @@
+int g0/1/0.101
+description 101
+encapsulation dot1Q 101
+ip add 150.100.219.130 255.255.255.252
+no shut
+exit
+int g0/1/0.102
+description 102
+encapsulation dot1Q 102
+ip add 150.100.219.134 255.255.255.252
+no shut
+exit
+int g0/1/0.103
+description 103
+encapsulation dot1Q 103
+ip add 150.100.219.138 255.255.255.252
+no shut
+exit
+int g0/1/0.104
+description 104
+encapsulation dot1Q 104
+ip add 150.100.219.142 255.255.255.252
+no shut
+exit
+int g0/1/0.105
+description 105
+encapsulation dot1Q 105
+ip add 150.100.219.146 255.255.255.252
+no shut
+exit
+int g0/1/0.106
+description 106
+encapsulation dot1Q 106
+ip add 150.100.219.150 255.255.255.252
+no shut
+exit
+int g0/1/0.107
+description 107
+encapsulation dot1Q 107
+ip add 150.100.219.154 255.255.255.252
+no shut
+exit
+int g0/1/0.108
+description 108
+encapsulation dot1Q 108
+ip add 150.100.219.158 255.255.255.252
+no shut
+exit
+int g0/1/0.109
+description 109
+encapsulation dot1Q 109
+ip add 150.100.219.162 255.255.255.252
+no shut
+exit
+int g0/1/0.110
+description 110
+encapsulation dot1Q 110
+ip add 150.100.219.166 255.255.255.252
+no shut
+exit
+int g0/1/0.111
+description 111
+encapsulation dot1Q 111
+ip add 150.100.219.170 255.255.255.252
+no shut
+exit
+int g0/1/0.112
+description 112
+encapsulation dot1Q 112
+ip add 150.100.219.174 255.255.255.252
+no shut
+exit
+int g0/1/0.113
+description 113
+encapsulation dot1Q 113
+ip add 150.100.219.178 255.255.255.252
+no shut
+exit
+int g0/1/0.114
+description 114
+encapsulation dot1Q 114
+ip add 150.100.219.182 255.255.255.252
+no shut
+exit
+int g0/1/0.115
+description 115
+encapsulation dot1Q 115
+ip add 150.100.219.186 255.255.255.252
+no shut
+exit
+int g0/1/0.116
+description 116
+encapsulation dot1Q 116
+ip add 150.100.219.190 255.255.255.252
+no shut
+exit
+int g0/1/0.117
+description 117
+encapsulation dot1Q 117
+ip add 150.100.219.194 255.255.255.252
+no shut
+exit
+int g0/1/0.118
+description 118
+encapsulation dot1Q 118
+ip add 150.100.219.198 255.255.255.252
+no shut
+exit
+int g0/1/0.119
+description 119
+encapsulation dot1Q 119
+ip add 150.100.219.202 255.255.255.252
+no shut
+exit
+int g0/1/0.120
+description 120
+encapsulation dot1Q 120
+ip add 150.100.219.206 255.255.255.252
+no shut
+exit
+int g0/1/0.121
+description 121
+encapsulation dot1Q 121
+ip add 150.100.219.210 255.255.255.252
+no shut
+exit
+int g0/1/0.122
+description 122
+encapsulation dot1Q 122
+ip add 150.100.219.214 255.255.255.252
+no shut
+exit
+int g0/1/0.123
+description 123
+encapsulation dot1Q 123
+ip add 150.100.219.218 255.255.255.252
+no shut
+exit
+int g0/1/0.124
+description 124
+encapsulation dot1Q 124
+ip add 150.100.219.222 255.255.255.252
+no shut
+exit
+int g0/1/0.125
+description 125
+encapsulation dot1Q 125
+ip add 150.100.219.226 255.255.255.252
+no shut
+exit
+int g0/1/0.126
+description 126
+encapsulation dot1Q 126
+ip add 150.100.219.230 255.255.255.252
+no shut
+exit
+int g0/1/0.127
+description 127
+encapsulation dot1Q 127
+ip add 150.100.219.234 255.255.255.252
+no shut
+exit
+int g0/1/0.128
+description 128
+encapsulation dot1Q 128
+ip add 150.100.219.238 255.255.255.252
+no shut
+exit
+int g0/1/0.129
+description 129
+encapsulation dot1Q 129
+ip add 150.100.219.242 255.255.255.252
+no shut
+exit
+int g0/1/0.130
+description 130
+encapsulation dot1Q 130
+ip add 150.100.219.246 255.255.255.252
+no shut
+exit
+int g0/1/0.131
+description 131
+encapsulation dot1Q 131
+ip add 150.100.219.250 255.255.255.252
+no shut
+exit
+int g0/1/0.132
+description 132
+encapsulation dot1Q 132
+ip add 150.100.219.254 255.255.255.252
+no shut
+exit
+int g0/1/0.133
+description 133
+encapsulation dot1Q 133
+ip add 150.100.220.2 255.255.255.252
+no shut
+exit
+int g0/1/0.134
+description 134
+encapsulation dot1Q 134
+ip add 150.100.220.6 255.255.255.252
+no shut
+exit
+int g0/1/0.135
+description 135
+encapsulation dot1Q 135
+ip add 150.100.220.10 255.255.255.252
+no shut
+exit
+int g0/1/0.136
+description 136
+encapsulation dot1Q 136
+ip add 150.100.220.14 255.255.255.252
+no shut
+exit
+int g0/1/0.137
+description 137
+encapsulation dot1Q 137
+ip add 150.100.220.18 255.255.255.252
+no shut
+exit
+int g0/1/0.138
+description 138
+encapsulation dot1Q 138
+ip add 150.100.220.22 255.255.255.252
+no shut
+exit
+int g0/1/0.139
+description 139
+encapsulation dot1Q 139
+ip add 150.100.220.26 255.255.255.252
+no shut
+exit
+int g0/1/0.140
+description 140
+encapsulation dot1Q 140
+ip add 150.100.220.30 255.255.255.252
+no shut
+exit
+int g0/1/0.141
+description 141
+encapsulation dot1Q 141
+ip add 150.100.220.34 255.255.255.252
+no shut
+exit
+int g0/1/0.142
+description 142
+encapsulation dot1Q 142
+ip add 150.100.220.38 255.255.255.252
+no shut
+exit
+int g0/1/0.143
+description 143
+encapsulation dot1Q 143
+ip add 150.100.220.42 255.255.255.252
+no shut
+exit
+int g0/1/0.144
+description 144
+encapsulation dot1Q 144
+ip add 150.100.220.46 255.255.255.252
+no shut
+exit
+int g0/1/0.145
+description 145
+encapsulation dot1Q 145
+ip add 150.100.220.50 255.255.255.252
+no shut
+exit
+int g0/1/0.146
+description 146
+encapsulation dot1Q 146
+ip add 150.100.220.54 255.255.255.252
+no shut
+exit
+int g0/1/0.147
+description 147
+encapsulation dot1Q 147
+ip add 150.100.220.58 255.255.255.252
+no shut
+exit
+int g0/1/0.148
+description 148
+encapsulation dot1Q 148
+ip add 150.100.220.62 255.255.255.252
+no shut
+exit
+int g0/1/0.149
+description 149
+encapsulation dot1Q 149
+ip add 150.100.220.66 255.255.255.252
+no shut
+exit
+int g0/1/0.150
+description 150
+encapsulation dot1Q 150
+ip add 150.100.220.70 255.255.255.252
+no shut
+exit
+int g0/1/0.151
+description 151
+encapsulation dot1Q 151
+ip add 150.100.220.74 255.255.255.252
+no shut
+exit
+int g0/1/0.152
+description 152
+encapsulation dot1Q 152
+ip add 150.100.220.78 255.255.255.252
+no shut
+exit
+int g0/1/0.153
+description 153
+encapsulation dot1Q 153
+ip add 150.100.220.82 255.255.255.252
+no shut
+exit
+int g0/1/0.154
+description 154
+encapsulation dot1Q 154
+ip add 150.100.220.86 255.255.255.252
+no shut
+exit
+int g0/1/0.155
+description 155
+encapsulation dot1Q 155
+ip add 150.100.220.90 255.255.255.252
+no shut
+exit
+int g0/1/0.156
+description 156
+encapsulation dot1Q 156
+ip add 150.100.220.94 255.255.255.252
+no shut
+exit
+int g0/1/0.157
+description 157
+encapsulation dot1Q 157
+ip add 150.100.220.98 255.255.255.252
+no shut
+exit
+int g0/1/0.158
+description 158
+encapsulation dot1Q 158
+ip add 150.100.220.102 255.255.255.252
+no shut
+exit
+int g0/1/0.159
+description 159
+encapsulation dot1Q 159
+ip add 150.100.220.106 255.255.255.252
+no shut
+exit
+int g0/1/0.160
+description 160
+encapsulation dot1Q 160
+ip add 150.100.220.110 255.255.255.252
+no shut
+exit
+int g0/1/0.161
+description 161
+encapsulation dot1Q 161
+ip add 150.100.220.114 255.255.255.252
+no shut
+exit
+int g0/1/0.162
+description 162
+encapsulation dot1Q 162
+ip add 150.100.220.118 255.255.255.252
+no shut
+exit
+int g0/1/0.163
+description 163
+encapsulation dot1Q 163
+ip add 150.100.220.122 255.255.255.252
+no shut
+exit
+int g0/1/0.164
+description 164
+encapsulation dot1Q 164
+ip add 150.100.220.126 255.255.255.252
+no shut
+exit

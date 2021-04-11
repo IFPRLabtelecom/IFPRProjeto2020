@@ -1,0 +1,320 @@
+ip dhcp pool ASSINANTE101
+network 150.100.219.128 255.255.255.252
+default-router 150.100.219.130
+dns-server 150.100.219.130
+exit
+ip dhcp pool ASSINANTE102
+network 150.100.219.132 255.255.255.252
+default-router 150.100.219.134
+dns-server 150.100.219.134
+exit
+ip dhcp pool ASSINANTE103
+network 150.100.219.136 255.255.255.252
+default-router 150.100.219.138
+dns-server 150.100.219.138
+exit
+ip dhcp pool ASSINANTE104
+network 150.100.219.140 255.255.255.252
+default-router 150.100.219.142
+dns-server 150.100.219.142
+exit
+ip dhcp pool ASSINANTE105
+network 150.100.219.144 255.255.255.252
+default-router 150.100.219.146
+dns-server 150.100.219.146
+exit
+ip dhcp pool ASSINANTE106
+network 150.100.219.148 255.255.255.252
+default-router 150.100.219.150
+dns-server 150.100.219.150
+exit
+ip dhcp pool ASSINANTE107
+network 150.100.219.152 255.255.255.252
+default-router 150.100.219.154
+dns-server 150.100.219.154
+exit
+ip dhcp pool ASSINANTE108
+network 150.100.219.156 255.255.255.252
+default-router 150.100.219.158
+dns-server 150.100.219.158
+exit
+ip dhcp pool ASSINANTE109
+network 150.100.219.160 255.255.255.252
+default-router 150.100.219.162
+dns-server 150.100.219.162
+exit
+ip dhcp pool ASSINANTE110
+network 150.100.219.164 255.255.255.252
+default-router 150.100.219.166
+dns-server 150.100.219.166
+exit
+ip dhcp pool ASSINANTE111
+network 150.100.219.168 255.255.255.252
+default-router 150.100.219.170
+dns-server 150.100.219.170
+exit
+ip dhcp pool ASSINANTE112
+network 150.100.219.172 255.255.255.252
+default-router 150.100.219.174
+dns-server 150.100.219.174
+exit
+ip dhcp pool ASSINANTE113
+network 150.100.219.176 255.255.255.252
+default-router 150.100.219.178
+dns-server 150.100.219.178
+exit
+ip dhcp pool ASSINANTE114
+network 150.100.219.180 255.255.255.252
+default-router 150.100.219.182
+dns-server 150.100.219.182
+exit
+ip dhcp pool ASSINANTE115
+network 150.100.219.184 255.255.255.252
+default-router 150.100.219.186
+dns-server 150.100.219.186
+exit
+ip dhcp pool ASSINANTE116
+network 150.100.219.188 255.255.255.252
+default-router 150.100.219.190
+dns-server 150.100.219.190
+exit
+ip dhcp pool ASSINANTE117
+network 150.100.219.192 255.255.255.252
+default-router 150.100.219.194
+dns-server 150.100.219.194
+exit
+ip dhcp pool ASSINANTE118
+network 150.100.219.196 255.255.255.252
+default-router 150.100.219.198
+dns-server 150.100.219.198
+exit
+ip dhcp pool ASSINANTE119
+network 150.100.219.200 255.255.255.252
+default-router 150.100.219.202
+dns-server 150.100.219.202
+exit
+ip dhcp pool ASSINANTE120
+network 150.100.219.204 255.255.255.252
+default-router 150.100.219.206
+dns-server 150.100.219.206
+exit
+ip dhcp pool ASSINANTE121
+network 150.100.219.208 255.255.255.252
+default-router 150.100.219.210
+dns-server 150.100.219.210
+exit
+ip dhcp pool ASSINANTE122
+network 150.100.219.212 255.255.255.252
+default-router 150.100.219.214
+dns-server 150.100.219.214
+exit
+ip dhcp pool ASSINANTE123
+network 150.100.219.216 255.255.255.252
+default-router 150.100.219.218
+dns-server 150.100.219.218
+exit
+ip dhcp pool ASSINANTE124
+network 150.100.219.220 255.255.255.252
+default-router 150.100.219.222
+dns-server 150.100.219.222
+exit
+ip dhcp pool ASSINANTE125
+network 150.100.219.224 255.255.255.252
+default-router 150.100.219.226
+dns-server 150.100.219.226
+exit
+ip dhcp pool ASSINANTE126
+network 150.100.219.228 255.255.255.252
+default-router 150.100.219.230
+dns-server 150.100.219.230
+exit
+ip dhcp pool ASSINANTE127
+network 150.100.219.232 255.255.255.252
+default-router 150.100.219.234
+dns-server 150.100.219.234
+exit
+ip dhcp pool ASSINANTE128
+network 150.100.219.236 255.255.255.252
+default-router 150.100.219.238
+dns-server 150.100.219.238
+exit
+ip dhcp pool ASSINANTE129
+network 150.100.219.240 255.255.255.252
+default-router 150.100.219.242
+dns-server 150.100.219.242
+exit
+ip dhcp pool ASSINANTE130
+network 150.100.219.244 255.255.255.252
+default-router 150.100.219.246
+dns-server 150.100.219.246
+exit
+ip dhcp pool ASSINANTE131
+network 150.100.219.248 255.255.255.252
+default-router 150.100.219.250
+dns-server 150.100.219.250
+exit
+ip dhcp pool ASSINANTE132
+network 150.100.219.252 255.255.255.252
+default-router 150.100.219.254
+dns-server 150.100.219.254
+exit
+ip dhcp pool ASSINANTE133
+network 150.100.220.0 255.255.255.252
+default-router 150.100.220.2
+dns-server 150.100.220.2
+exit
+ip dhcp pool ASSINANTE134
+network 150.100.220.4 255.255.255.252
+default-router 150.100.220.6
+dns-server 150.100.220.6
+exit
+ip dhcp pool ASSINANTE135
+network 150.100.220.8 255.255.255.252
+default-router 150.100.220.10
+dns-server 150.100.220.10
+exit
+ip dhcp pool ASSINANTE136
+network 150.100.220.12 255.255.255.252
+default-router 150.100.220.14
+dns-server 150.100.220.14
+exit
+ip dhcp pool ASSINANTE137
+network 150.100.220.16 255.255.255.252
+default-router 150.100.220.18
+dns-server 150.100.220.18
+exit
+ip dhcp pool ASSINANTE138
+network 150.100.220.20 255.255.255.252
+default-router 150.100.220.22
+dns-server 150.100.220.22
+exit
+ip dhcp pool ASSINANTE139
+network 150.100.220.24 255.255.255.252
+default-router 150.100.220.26
+dns-server 150.100.220.26
+exit
+ip dhcp pool ASSINANTE140
+network 150.100.220.28 255.255.255.252
+default-router 150.100.220.30
+dns-server 150.100.220.30
+exit
+ip dhcp pool ASSINANTE141
+network 150.100.220.32 255.255.255.252
+default-router 150.100.220.34
+dns-server 150.100.220.34
+exit
+ip dhcp pool ASSINANTE142
+network 150.100.220.36 255.255.255.252
+default-router 150.100.220.38
+dns-server 150.100.220.38
+exit
+ip dhcp pool ASSINANTE143
+network 150.100.220.40 255.255.255.252
+default-router 150.100.220.42
+dns-server 150.100.220.42
+exit
+ip dhcp pool ASSINANTE144
+network 150.100.220.44 255.255.255.252
+default-router 150.100.220.46
+dns-server 150.100.220.46
+exit
+ip dhcp pool ASSINANTE145
+network 150.100.220.48 255.255.255.252
+default-router 150.100.220.50
+dns-server 150.100.220.50
+exit
+ip dhcp pool ASSINANTE146
+network 150.100.220.52 255.255.255.252
+default-router 150.100.220.54
+dns-server 150.100.220.54
+exit
+ip dhcp pool ASSINANTE147
+network 150.100.220.56 255.255.255.252
+default-router 150.100.220.58
+dns-server 150.100.220.58
+exit
+ip dhcp pool ASSINANTE148
+network 150.100.220.60 255.255.255.252
+default-router 150.100.220.62
+dns-server 150.100.220.62
+exit
+ip dhcp pool ASSINANTE149
+network 150.100.220.64 255.255.255.252
+default-router 150.100.220.66
+dns-server 150.100.220.66
+exit
+ip dhcp pool ASSINANTE150
+network 150.100.220.68 255.255.255.252
+default-router 150.100.220.70
+dns-server 150.100.220.70
+exit
+ip dhcp pool ASSINANTE151
+network 150.100.220.72 255.255.255.252
+default-router 150.100.220.74
+dns-server 150.100.220.74
+exit
+ip dhcp pool ASSINANTE152
+network 150.100.220.76 255.255.255.252
+default-router 150.100.220.78
+dns-server 150.100.220.78
+exit
+ip dhcp pool ASSINANTE153
+network 150.100.220.80 255.255.255.252
+default-router 150.100.220.82
+dns-server 150.100.220.82
+exit
+ip dhcp pool ASSINANTE154
+network 150.100.220.84 255.255.255.252
+default-router 150.100.220.86
+dns-server 150.100.220.86
+exit
+ip dhcp pool ASSINANTE155
+network 150.100.220.88 255.255.255.252
+default-router 150.100.220.90
+dns-server 150.100.220.90
+exit
+ip dhcp pool ASSINANTE156
+network 150.100.220.92 255.255.255.252
+default-router 150.100.220.94
+dns-server 150.100.220.94
+exit
+ip dhcp pool ASSINANTE157
+network 150.100.220.96 255.255.255.252
+default-router 150.100.220.98
+dns-server 150.100.220.98
+exit
+ip dhcp pool ASSINANTE158
+network 150.100.220.100 255.255.255.252
+default-router 150.100.220.102
+dns-server 150.100.220.102
+exit
+ip dhcp pool ASSINANTE159
+network 150.100.220.104 255.255.255.252
+default-router 150.100.220.106
+dns-server 150.100.220.106
+exit
+ip dhcp pool ASSINANTE160
+network 150.100.220.108 255.255.255.252
+default-router 150.100.220.110
+dns-server 150.100.220.110
+exit
+ip dhcp pool ASSINANTE161
+network 150.100.220.112 255.255.255.252
+default-router 150.100.220.114
+dns-server 150.100.220.114
+exit
+ip dhcp pool ASSINANTE162
+network 150.100.220.116 255.255.255.252
+default-router 150.100.220.118
+dns-server 150.100.220.118
+exit
+ip dhcp pool ASSINANTE163
+network 150.100.220.120 255.255.255.252
+default-router 150.100.220.122
+dns-server 150.100.220.122
+exit
+ip dhcp pool ASSINANTE164
+network 150.100.220.124 255.255.255.252
+default-router 150.100.220.126
+dns-server 150.100.220.126
+exit

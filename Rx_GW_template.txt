@@ -1,0 +1,226 @@
+!
+version 12.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname R3_GW_GUAPE
+!
+!
+!
+!
+!
+ip dhcp pool VoIP
+ network 150.100.219.0 255.255.255.192
+ default-router 150.100.219.62
+ option 150 ip 150.100.219.62
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface FastEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface GigabitEthernet0/0/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet0/1/0
+ description R3_GUAPE
+ no ip address
+!
+interface GigabitEthernet0/1/0.1
+ description VoIP
+ encapsulation dot1Q 1 native
+ ip address 150.100.219.62 255.255.255.192
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+no cdp run
+!
+!
+!
+!
+!
+!
+telephony-service
+ max-ephones 42
+ max-dn 42
+ ip source-address 150.100.219.62 port 2000
+ auto assign 1 to 42
+!
+ephone-dn 1
+ number 12163001
+!
+ephone-dn 2
+ number 12163002
+!
+ephone-dn 3
+ number 12163003
+!
+ephone-dn 4
+ number 12163004
+!
+ephone-dn 5
+ number 12163005
+!
+ephone-dn 6
+ number 12163006
+!
+ephone-dn 7
+ number 12163007
+!
+ephone-dn 8
+ number 12163008
+!
+ephone-dn 9
+ number 12163009
+!
+ephone-dn 10
+ number 12163010
+!
+ephone-dn 11
+ number 12163011
+!
+ephone-dn 12
+ number 12163012
+!
+ephone-dn 13
+ number 12163013
+!
+ephone-dn 14
+ number 12163014
+!
+ephone-dn 15
+ number 12163015
+!
+ephone-dn 16
+ number 12163016
+!
+ephone-dn 17
+ number 12163017
+!
+ephone-dn 18
+ number 12163018
+!
+ephone-dn 19
+ number 12163019
+!
+ephone-dn 20
+ number 12163020
+!
+ephone-dn 21
+ number 12163021
+!
+ephone-dn 22
+ number 12163022
+!
+ephone-dn 23
+ number 12163023
+!
+ephone-dn 24
+ number 12163024
+!
+ephone-dn 25
+ number 12163025
+!
+ephone-dn 26
+ number 12163026
+!
+ephone-dn 27
+ number 12163027
+!
+ephone-dn 28
+ number 12163028
+!
+ephone-dn 29
+ number 12163029
+!
+ephone-dn 30
+ number 12163030
+!
+ephone-dn 31
+ number 12163031
+!
+ephone-dn 32
+ number 12163032
+!
+ephone-dn 33
+ number 12163033
+!
+ephone-dn 34
+ number 12163034
+!
+ephone-dn 35
+ number 12163035
+!
+ephone-dn 36
+ number 12163036
+!
+ephone-dn 37
+ number 12163037
+!
+ephone-dn 38
+ number 12163038
+!
+ephone-dn 39
+ number 12163039
+!
+ephone-dn 40
+ number 12163040
+!
+ephone-dn 41
+ number 12163041
+!
+ephone-dn 42
+ number 12163042
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+

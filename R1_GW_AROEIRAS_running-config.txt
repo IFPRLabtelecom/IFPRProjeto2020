@@ -1,0 +1,869 @@
+!
+version 12.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname R1_GW_AROEIRAS
+!
+!
+!
+!
+!
+ip dhcp pool VoIP
+ network 150.100.216.0 255.255.255.192
+ default-router 150.100.216.62
+ option 150 ip 150.100.216.62
+ip dhcp pool IPCAM
+ network 150.100.216.64 255.255.255.192
+ default-router 150.100.216.126
+ dns-server 150.100.216.126
+ip dhcp pool ASSINANTE101
+ network 150.100.216.128 255.255.255.252
+ default-router 150.100.216.130
+ dns-server 150.100.216.130
+ip dhcp pool ASSINANTE102
+ network 150.100.216.132 255.255.255.252
+ default-router 150.100.216.134
+ dns-server 150.100.216.134
+ip dhcp pool ASSINANTE103
+ network 150.100.216.136 255.255.255.252
+ default-router 150.100.216.138
+ dns-server 150.100.216.138
+ip dhcp pool ASSINANTE104
+ network 150.100.216.140 255.255.255.252
+ default-router 150.100.216.142
+ dns-server 150.100.216.142
+ip dhcp pool ASSINANTE105
+ network 150.100.216.144 255.255.255.252
+ default-router 150.100.216.146
+ dns-server 150.100.216.146
+ip dhcp pool ASSINANTE106
+ network 150.100.216.148 255.255.255.252
+ default-router 150.100.216.150
+ dns-server 150.100.216.150
+ip dhcp pool ASSINANTE107
+ network 150.100.216.152 255.255.255.252
+ default-router 150.100.216.154
+ dns-server 150.100.216.154
+ip dhcp pool ASSINANTE108
+ network 150.100.216.156 255.255.255.252
+ default-router 150.100.216.158
+ dns-server 150.100.216.158
+ip dhcp pool ASSINANTE109
+ network 150.100.216.160 255.255.255.252
+ default-router 150.100.216.162
+ dns-server 150.100.216.162
+ip dhcp pool ASSINANTE110
+ network 150.100.216.164 255.255.255.252
+ default-router 150.100.216.166
+ dns-server 150.100.216.166
+ip dhcp pool ASSINANTE111
+ network 150.100.216.168 255.255.255.252
+ default-router 150.100.216.170
+ dns-server 150.100.216.170
+ip dhcp pool ASSINANTE112
+ network 150.100.216.172 255.255.255.252
+ default-router 150.100.216.174
+ dns-server 150.100.216.174
+ip dhcp pool ASSINANTE113
+ network 150.100.216.176 255.255.255.252
+ default-router 150.100.216.178
+ dns-server 150.100.216.178
+ip dhcp pool ASSINANTE114
+ network 150.100.216.180 255.255.255.252
+ default-router 150.100.216.182
+ dns-server 150.100.216.182
+ip dhcp pool ASSINANTE115
+ network 150.100.216.184 255.255.255.252
+ default-router 150.100.216.186
+ dns-server 150.100.216.186
+ip dhcp pool ASSINANTE116
+ network 150.100.216.188 255.255.255.252
+ default-router 150.100.216.190
+ dns-server 150.100.216.190
+ip dhcp pool ASSINANTE117
+ network 150.100.216.192 255.255.255.252
+ default-router 150.100.216.194
+ dns-server 150.100.216.194
+ip dhcp pool ASSINANTE118
+ network 150.100.216.196 255.255.255.252
+ default-router 150.100.216.198
+ dns-server 150.100.216.198
+ip dhcp pool ASSINANTE119
+ network 150.100.216.200 255.255.255.252
+ default-router 150.100.216.202
+ dns-server 150.100.216.202
+ip dhcp pool ASSINANTE120
+ network 150.100.216.204 255.255.255.252
+ default-router 150.100.216.206
+ dns-server 150.100.216.206
+ip dhcp pool ASSINANTE121
+ network 150.100.216.208 255.255.255.252
+ default-router 150.100.216.210
+ dns-server 150.100.216.210
+ip dhcp pool ASSINANTE122
+ network 150.100.216.212 255.255.255.252
+ default-router 150.100.216.214
+ dns-server 150.100.216.214
+ip dhcp pool ASSINANTE123
+ network 150.100.216.216 255.255.255.252
+ default-router 150.100.216.218
+ dns-server 150.100.216.218
+ip dhcp pool ASSINANTE124
+ network 150.100.216.220 255.255.255.252
+ default-router 150.100.216.222
+ dns-server 150.100.216.222
+ip dhcp pool ASSINANTE125
+ network 150.100.216.224 255.255.255.252
+ default-router 150.100.216.226
+ dns-server 150.100.216.226
+ip dhcp pool ASSINANTE126
+ network 150.100.216.228 255.255.255.252
+ default-router 150.100.216.230
+ dns-server 150.100.216.230
+ip dhcp pool ASSINANTE127
+ network 150.100.216.232 255.255.255.252
+ default-router 150.100.216.234
+ dns-server 150.100.216.234
+ip dhcp pool ASSINANTE128
+ network 150.100.216.236 255.255.255.252
+ default-router 150.100.216.238
+ dns-server 150.100.216.238
+ip dhcp pool ASSINANTE129
+ network 150.100.216.240 255.255.255.252
+ default-router 150.100.216.242
+ dns-server 150.100.216.242
+ip dhcp pool ASSINANTE130
+ network 150.100.216.244 255.255.255.252
+ default-router 150.100.216.246
+ dns-server 150.100.216.246
+ip dhcp pool ASSINANTE131
+ network 150.100.216.248 255.255.255.252
+ default-router 150.100.216.250
+ dns-server 150.100.216.250
+ip dhcp pool ASSINANTE132
+ network 150.100.216.252 255.255.255.252
+ default-router 150.100.216.254
+ dns-server 150.100.216.254
+ip dhcp pool ASSINANTE133
+ network 150.100.217.0 255.255.255.252
+ default-router 150.100.217.2
+ dns-server 150.100.217.2
+ip dhcp pool ASSINANTE134
+ network 150.100.217.4 255.255.255.252
+ default-router 150.100.217.6
+ dns-server 150.100.217.6
+ip dhcp pool ASSINANTE135
+ network 150.100.217.8 255.255.255.252
+ default-router 150.100.217.10
+ dns-server 150.100.217.10
+ip dhcp pool ASSINANTE136
+ network 150.100.217.12 255.255.255.252
+ default-router 150.100.217.14
+ dns-server 150.100.217.14
+ip dhcp pool ASSINANTE137
+ network 150.100.217.16 255.255.255.252
+ default-router 150.100.217.18
+ dns-server 150.100.217.18
+ip dhcp pool ASSINANTE138
+ network 150.100.217.20 255.255.255.252
+ default-router 150.100.217.22
+ dns-server 150.100.217.22
+ip dhcp pool ASSINANTE139
+ network 150.100.217.24 255.255.255.252
+ default-router 150.100.217.26
+ dns-server 150.100.217.26
+ip dhcp pool ASSINANTE140
+ network 150.100.217.28 255.255.255.252
+ default-router 150.100.217.30
+ dns-server 150.100.217.30
+ip dhcp pool ASSINANTE141
+ network 150.100.217.32 255.255.255.252
+ default-router 150.100.217.34
+ dns-server 150.100.217.34
+ip dhcp pool ASSINANTE142
+ network 150.100.217.36 255.255.255.252
+ default-router 150.100.217.38
+ dns-server 150.100.217.38
+ip dhcp pool ASSINANTE143
+ network 150.100.217.40 255.255.255.252
+ default-router 150.100.217.42
+ dns-server 150.100.217.42
+ip dhcp pool ASSINANTE144
+ network 150.100.217.44 255.255.255.252
+ default-router 150.100.217.46
+ dns-server 150.100.217.46
+ip dhcp pool ASSINANTE145
+ network 150.100.217.48 255.255.255.252
+ default-router 150.100.217.50
+ dns-server 150.100.217.50
+ip dhcp pool ASSINANTE146
+ network 150.100.217.52 255.255.255.252
+ default-router 150.100.217.54
+ dns-server 150.100.217.54
+ip dhcp pool ASSINANTE147
+ network 150.100.217.56 255.255.255.252
+ default-router 150.100.217.58
+ dns-server 150.100.217.58
+ip dhcp pool ASSINANTE148
+ network 150.100.217.60 255.255.255.252
+ default-router 150.100.217.62
+ dns-server 150.100.217.62
+ip dhcp pool ASSINANTE149
+ network 150.100.217.64 255.255.255.252
+ default-router 150.100.217.66
+ dns-server 150.100.217.66
+ip dhcp pool ASSINANTE150
+ network 150.100.217.68 255.255.255.252
+ default-router 150.100.217.70
+ dns-server 150.100.217.70
+ip dhcp pool ASSINANTE151
+ network 150.100.217.72 255.255.255.252
+ default-router 150.100.217.74
+ dns-server 150.100.217.74
+ip dhcp pool ASSINANTE152
+ network 150.100.217.76 255.255.255.252
+ default-router 150.100.217.78
+ dns-server 150.100.217.78
+ip dhcp pool ASSINANTE153
+ network 150.100.217.80 255.255.255.252
+ default-router 150.100.217.82
+ dns-server 150.100.217.82
+ip dhcp pool ASSINANTE154
+ network 150.100.217.84 255.255.255.252
+ default-router 150.100.217.86
+ dns-server 150.100.217.86
+ip dhcp pool ASSINANTE155
+ network 150.100.217.88 255.255.255.252
+ default-router 150.100.217.90
+ dns-server 150.100.217.90
+ip dhcp pool ASSINANTE156
+ network 150.100.217.92 255.255.255.252
+ default-router 150.100.217.94
+ dns-server 150.100.217.94
+ip dhcp pool ASSINANTE157
+ network 150.100.217.96 255.255.255.252
+ default-router 150.100.217.98
+ dns-server 150.100.217.98
+ip dhcp pool ASSINANTE158
+ network 150.100.217.100 255.255.255.252
+ default-router 150.100.217.102
+ dns-server 150.100.217.102
+ip dhcp pool ASSINANTE159
+ network 150.100.217.104 255.255.255.252
+ default-router 150.100.217.106
+ dns-server 150.100.217.106
+ip dhcp pool ASSINANTE160
+ network 150.100.217.108 255.255.255.252
+ default-router 150.100.217.110
+ dns-server 150.100.217.110
+ip dhcp pool ASSINANTE161
+ network 150.100.217.112 255.255.255.252
+ default-router 150.100.217.114
+ dns-server 150.100.217.114
+ip dhcp pool ASSINANTE162
+ network 150.100.217.116 255.255.255.252
+ default-router 150.100.217.118
+ dns-server 150.100.217.118
+ip dhcp pool ASSINANTE163
+ network 150.100.217.120 255.255.255.252
+ default-router 150.100.217.122
+ dns-server 150.100.217.122
+ip dhcp pool ASSINANTE164
+ network 150.100.217.124 255.255.255.252
+ default-router 150.100.217.126
+ dns-server 150.100.217.126
+!
+!
+!
+no ip cef
+ipv6 unicast-routing
+!
+no ipv6 cef
+!
+ipv6 dhcp pool IPv6R1
+ prefix-delegation pool IPv6R1 lifetime 2592000 604800
+ dns-server 2001:DB8:216:1000::F
+!
+!
+ipv6 local pool IPv6R1 2001:DB8:216:1000::/64 60
+!
+username OEMGUSTAVO privilege 15 secret 5 $1$mERr$rjoVbtss7/P4pWywmQXiH/
+!
+!
+!
+!
+!
+!
+!
+!
+ip ssh version 2
+ip ssh time-out 30
+ip domain-name ISPGUSTAVO
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ description ISP_VoIP
+ ip address 150.100.223.129 255.255.255.240
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ description IPCAM
+ ip address 150.100.223.146 255.255.255.240
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/0
+ description DADOS
+ ip address 150.100.223.161 255.255.255.240
+ ipv6 address 2001:DB8:216::1/52
+ ipv6 enable
+!
+interface GigabitEthernet0/1/0
+ description R1_AROEIRAS
+ no ip address
+!
+interface GigabitEthernet0/1/0.1
+ description VoIP
+ encapsulation dot1Q 1 native
+ ip address 150.100.216.62 255.255.255.192
+!
+interface GigabitEthernet0/1/0.2
+ description IPCAM
+ encapsulation dot1Q 2
+ ip address 150.100.216.126 255.255.255.192
+!
+interface GigabitEthernet0/1/0.3
+ encapsulation dot1Q 3
+ no ip address
+ ipv6 address 2001:DB8:216:1000::F/60
+ ipv6 enable
+ ipv6 dhcp server IPv6R1
+!
+interface GigabitEthernet0/1/0.4
+ description OEM
+ encapsulation dot1Q 4
+ ip address 100.65.1.254 255.255.255.0
+!
+interface GigabitEthernet0/1/0.101
+ description 101
+ encapsulation dot1Q 101
+ ip address 150.100.216.130 255.255.255.252
+!
+interface GigabitEthernet0/1/0.102
+ description 102
+ encapsulation dot1Q 102
+ ip address 150.100.216.134 255.255.255.252
+!
+interface GigabitEthernet0/1/0.103
+ description 103
+ encapsulation dot1Q 103
+ ip address 150.100.216.138 255.255.255.252
+!
+interface GigabitEthernet0/1/0.104
+ description 104
+ encapsulation dot1Q 104
+ ip address 150.100.216.142 255.255.255.252
+!
+interface GigabitEthernet0/1/0.105
+ description 105
+ encapsulation dot1Q 105
+ ip address 150.100.216.146 255.255.255.252
+!
+interface GigabitEthernet0/1/0.106
+ description 106
+ encapsulation dot1Q 106
+ ip address 150.100.216.150 255.255.255.252
+!
+interface GigabitEthernet0/1/0.107
+ description 107
+ encapsulation dot1Q 107
+ ip address 150.100.216.154 255.255.255.252
+!
+interface GigabitEthernet0/1/0.108
+ description 108
+ encapsulation dot1Q 108
+ ip address 150.100.216.158 255.255.255.252
+!
+interface GigabitEthernet0/1/0.109
+ description 109
+ encapsulation dot1Q 109
+ ip address 150.100.216.162 255.255.255.252
+!
+interface GigabitEthernet0/1/0.110
+ description 110
+ encapsulation dot1Q 110
+ ip address 150.100.216.166 255.255.255.252
+!
+interface GigabitEthernet0/1/0.111
+ description 111
+ encapsulation dot1Q 111
+ ip address 150.100.216.170 255.255.255.252
+!
+interface GigabitEthernet0/1/0.112
+ description 112
+ encapsulation dot1Q 112
+ ip address 150.100.216.174 255.255.255.252
+!
+interface GigabitEthernet0/1/0.113
+ description 113
+ encapsulation dot1Q 113
+ ip address 150.100.216.178 255.255.255.252
+!
+interface GigabitEthernet0/1/0.114
+ description 114
+ encapsulation dot1Q 114
+ ip address 150.100.216.182 255.255.255.252
+!
+interface GigabitEthernet0/1/0.115
+ description 115
+ encapsulation dot1Q 115
+ ip address 150.100.216.186 255.255.255.252
+!
+interface GigabitEthernet0/1/0.116
+ description 116
+ encapsulation dot1Q 116
+ ip address 150.100.216.190 255.255.255.252
+!
+interface GigabitEthernet0/1/0.117
+ description 117
+ encapsulation dot1Q 117
+ ip address 150.100.216.194 255.255.255.252
+!
+interface GigabitEthernet0/1/0.118
+ description 118
+ encapsulation dot1Q 118
+ ip address 150.100.216.198 255.255.255.252
+!
+interface GigabitEthernet0/1/0.119
+ description 119
+ encapsulation dot1Q 119
+ ip address 150.100.216.202 255.255.255.252
+!
+interface GigabitEthernet0/1/0.120
+ description 120
+ encapsulation dot1Q 120
+ ip address 150.100.216.206 255.255.255.252
+!
+interface GigabitEthernet0/1/0.121
+ description 121
+ encapsulation dot1Q 121
+ ip address 150.100.216.210 255.255.255.252
+!
+interface GigabitEthernet0/1/0.122
+ description 122
+ encapsulation dot1Q 122
+ ip address 150.100.216.214 255.255.255.252
+!
+interface GigabitEthernet0/1/0.123
+ description 123
+ encapsulation dot1Q 123
+ ip address 150.100.216.218 255.255.255.252
+!
+interface GigabitEthernet0/1/0.124
+ description 124
+ encapsulation dot1Q 124
+ ip address 150.100.216.222 255.255.255.252
+!
+interface GigabitEthernet0/1/0.125
+ description 125
+ encapsulation dot1Q 125
+ ip address 150.100.216.226 255.255.255.252
+!
+interface GigabitEthernet0/1/0.126
+ description 126
+ encapsulation dot1Q 126
+ ip address 150.100.216.230 255.255.255.252
+!
+interface GigabitEthernet0/1/0.127
+ description 127
+ encapsulation dot1Q 127
+ ip address 150.100.216.234 255.255.255.252
+!
+interface GigabitEthernet0/1/0.128
+ description 128
+ encapsulation dot1Q 128
+ ip address 150.100.216.238 255.255.255.252
+!
+interface GigabitEthernet0/1/0.129
+ description 129
+ encapsulation dot1Q 129
+ ip address 150.100.216.242 255.255.255.252
+!
+interface GigabitEthernet0/1/0.130
+ description 130
+ encapsulation dot1Q 130
+ ip address 150.100.216.246 255.255.255.252
+!
+interface GigabitEthernet0/1/0.131
+ description 131
+ encapsulation dot1Q 131
+ ip address 150.100.216.250 255.255.255.252
+!
+interface GigabitEthernet0/1/0.132
+ description 132
+ encapsulation dot1Q 132
+ ip address 150.100.216.254 255.255.255.252
+!
+interface GigabitEthernet0/1/0.133
+ description 133
+ encapsulation dot1Q 133
+ ip address 150.100.217.2 255.255.255.252
+!
+interface GigabitEthernet0/1/0.134
+ description 134
+ encapsulation dot1Q 134
+ ip address 150.100.217.6 255.255.255.252
+!
+interface GigabitEthernet0/1/0.135
+ description 135
+ encapsulation dot1Q 135
+ ip address 150.100.217.10 255.255.255.252
+!
+interface GigabitEthernet0/1/0.136
+ description 136
+ encapsulation dot1Q 136
+ ip address 150.100.217.14 255.255.255.252
+!
+interface GigabitEthernet0/1/0.137
+ description 137
+ encapsulation dot1Q 137
+ ip address 150.100.217.18 255.255.255.252
+!
+interface GigabitEthernet0/1/0.138
+ description 138
+ encapsulation dot1Q 138
+ ip address 150.100.217.22 255.255.255.252
+!
+interface GigabitEthernet0/1/0.139
+ description 139
+ encapsulation dot1Q 139
+ ip address 150.100.217.26 255.255.255.252
+!
+interface GigabitEthernet0/1/0.140
+ description 140
+ encapsulation dot1Q 140
+ ip address 150.100.217.30 255.255.255.252
+!
+interface GigabitEthernet0/1/0.141
+ description 141
+ encapsulation dot1Q 141
+ ip address 150.100.217.34 255.255.255.252
+!
+interface GigabitEthernet0/1/0.142
+ description 142
+ encapsulation dot1Q 142
+ ip address 150.100.217.38 255.255.255.252
+!
+interface GigabitEthernet0/1/0.143
+ description 143
+ encapsulation dot1Q 143
+ ip address 150.100.217.42 255.255.255.252
+!
+interface GigabitEthernet0/1/0.144
+ description 144
+ encapsulation dot1Q 144
+ ip address 150.100.217.46 255.255.255.252
+!
+interface GigabitEthernet0/1/0.145
+ description 145
+ encapsulation dot1Q 145
+ ip address 150.100.217.50 255.255.255.252
+!
+interface GigabitEthernet0/1/0.146
+ description 146
+ encapsulation dot1Q 146
+ ip address 150.100.217.54 255.255.255.252
+!
+interface GigabitEthernet0/1/0.147
+ description 147
+ encapsulation dot1Q 147
+ ip address 150.100.217.58 255.255.255.252
+!
+interface GigabitEthernet0/1/0.148
+ description 148
+ encapsulation dot1Q 148
+ ip address 150.100.217.62 255.255.255.252
+!
+interface GigabitEthernet0/1/0.149
+ description 149
+ encapsulation dot1Q 149
+ ip address 150.100.217.66 255.255.255.252
+!
+interface GigabitEthernet0/1/0.150
+ description 150
+ encapsulation dot1Q 150
+ ip address 150.100.217.70 255.255.255.252
+!
+interface GigabitEthernet0/1/0.151
+ description 151
+ encapsulation dot1Q 151
+ ip address 150.100.217.74 255.255.255.252
+!
+interface GigabitEthernet0/1/0.152
+ description 152
+ encapsulation dot1Q 152
+ ip address 150.100.217.78 255.255.255.252
+!
+interface GigabitEthernet0/1/0.153
+ description 153
+ encapsulation dot1Q 153
+ ip address 150.100.217.82 255.255.255.252
+!
+interface GigabitEthernet0/1/0.154
+ description 154
+ encapsulation dot1Q 154
+ ip address 150.100.217.86 255.255.255.252
+!
+interface GigabitEthernet0/1/0.155
+ description 155
+ encapsulation dot1Q 155
+ ip address 150.100.217.90 255.255.255.252
+!
+interface GigabitEthernet0/1/0.156
+ description 156
+ encapsulation dot1Q 156
+ ip address 150.100.217.94 255.255.255.252
+!
+interface GigabitEthernet0/1/0.157
+ description 157
+ encapsulation dot1Q 157
+ ip address 150.100.217.98 255.255.255.252
+!
+interface GigabitEthernet0/1/0.158
+ description 158
+ encapsulation dot1Q 158
+ ip address 150.100.217.102 255.255.255.252
+!
+interface GigabitEthernet0/1/0.159
+ description 159
+ encapsulation dot1Q 159
+ ip address 150.100.217.106 255.255.255.252
+!
+interface GigabitEthernet0/1/0.160
+ description 160
+ encapsulation dot1Q 160
+ ip address 150.100.217.110 255.255.255.252
+!
+interface GigabitEthernet0/1/0.161
+ description 161
+ encapsulation dot1Q 161
+ ip address 150.100.217.114 255.255.255.252
+!
+interface GigabitEthernet0/1/0.162
+ description 162
+ encapsulation dot1Q 162
+ ip address 150.100.217.118 255.255.255.252
+!
+interface GigabitEthernet0/1/0.163
+ description 163
+ encapsulation dot1Q 163
+ ip address 150.100.217.122 255.255.255.252
+!
+interface GigabitEthernet0/1/0.164
+ description 164
+ encapsulation dot1Q 164
+ ip address 150.100.217.126 255.255.255.252
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+ip route 150.100.217.128 255.255.255.192 150.100.223.130 
+ip route 150.100.219.0 255.255.255.192 150.100.223.131 
+ip route 0.0.0.0 0.0.0.0 150.100.223.174 
+!
+ip flow-export version 9
+!
+!
+!
+no cdp run
+!
+!
+!
+!
+!
+!
+dial-peer voice 2 voip
+ destination-pattern 12162...
+ session target ipv4:150.100.223.130
+!
+dial-peer voice 3 voip
+ destination-pattern 12163...
+ session target ipv4:150.100.223.131
+!
+telephony-service
+ max-ephones 42
+ max-dn 42
+ ip source-address 150.100.216.62 port 2000
+ auto assign 1 to 42
+!
+ephone-dn 1
+ number 12161001
+!
+ephone-dn 2
+ number 12161002
+!
+ephone-dn 3
+ number 12161017
+!
+ephone-dn 4
+ number 12161004
+!
+ephone-dn 5
+ number 12161005
+!
+ephone-dn 6
+ number 12161006
+!
+ephone-dn 7
+ number 12161007
+!
+ephone-dn 8
+ number 12161008
+!
+ephone-dn 9
+ number 12161009
+!
+ephone-dn 10
+ number 12161010
+!
+ephone-dn 11
+ number 12161011
+!
+ephone-dn 12
+ number 12161012
+!
+ephone-dn 13
+ number 12161013
+!
+ephone-dn 14
+ number 12161014
+!
+ephone-dn 15
+ number 12161015
+!
+ephone-dn 16
+ number 12161016
+!
+ephone-dn 17
+ number 12161017
+!
+ephone-dn 18
+ number 12161018
+!
+ephone-dn 19
+ number 12161019
+!
+ephone-dn 20
+ number 12161020
+!
+ephone-dn 21
+ number 12161021
+!
+ephone-dn 22
+ number 12161022
+!
+ephone-dn 23
+ number 12161023
+!
+ephone-dn 24
+ number 12161024
+!
+ephone-dn 25
+ number 12161025
+!
+ephone-dn 26
+ number 12161026
+!
+ephone-dn 27
+ number 12161027
+!
+ephone-dn 28
+ number 12161028
+!
+ephone-dn 29
+ number 12161029
+!
+ephone-dn 30
+ number 12161030
+!
+ephone-dn 31
+ number 12161031
+!
+ephone-dn 32
+ number 12161032
+!
+ephone-dn 33
+ number 12161033
+!
+ephone-dn 34
+ number 12161034
+!
+ephone-dn 35
+ number 12161035
+!
+ephone-dn 36
+ number 12161036
+!
+ephone-dn 37
+ number 12161037
+!
+ephone-dn 38
+ number 12161038
+!
+ephone-dn 39
+ number 12161039
+!
+ephone-dn 40
+ number 12161040
+!
+ephone-dn 41
+ number 12161041
+!
+ephone-dn 42
+ number 12161042
+!
+ephone 1
+ device-security-mode none
+ mac-address 0004.9AE9.249C
+ type 7960
+ button 1:1
+!
+ephone 2
+ device-security-mode none
+ mac-address 00E0.B047.DD37
+ type 7960
+ button 1:2
+!
+ephone 3
+ device-security-mode none
+ mac-address 000C.CFB3.5E27
+ type 7960
+ button 1:3
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login local
+ transport input ssh
+line vty 5 15
+ login local
+ transport input ssh
+!
+!
+!
+end
+
