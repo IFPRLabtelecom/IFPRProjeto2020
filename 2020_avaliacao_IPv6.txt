@@ -8,6 +8,13 @@
 2001:db8:216:RCC0::/60
 2001:db8:216:RCC2::/64
 
+ipv6 route 2001:db8:216:1000::/52
+ipv6 route 2001:db8:216:1000::/64 2001:db8:216:3::1
+ipv6 route 2001:db8:216:1010::/64 2001:db8:216:3::1
+ipv6 route 2001:db8:216:1020::/64 2001:db8:216:3::1
+...
+ipv6 route 2001:db8:216:1640::/64 2001:db8:216:3::1
+
 1) Anote o seu prefixo IPv6 que deverá ser utilizado 
 no seu projeto de rede 2001:db8:216::/48 com base
 no documento 02-Relação de equipes e setores.
