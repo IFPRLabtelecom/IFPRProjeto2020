@@ -6,8 +6,23 @@
 #CONFIGURAÇÃO BÁSICA DHCPv6 -------------------------------------------
 Tutorial: https://sites.google.com/a/ifpr.edu.br/gustavothl/tutoriais-e-exemplos/dhcp-ipv6
 
+ipv6 local pool R1_IPv6 2001:db8:216:1000::/64 64
+ipv6 dhcp pool R1_IPv6
+prefix-delegation pool R1_IPv6
+dns-server 2001:db8:216:1000::FFFF
+exit
 
+int g0/1/0.6
+encapsulation dot1q 6
+ipv6 enable
+ipv6 add 2001:db8:216:1000::FFFF/64
+ipv6 dhcp server R1_IPv6
+ipv6 nd other-config-flag
+no shut
+exit
 
+ipv6 route ::/0 2001:db8:216:3::FFFF
+do wr
 
 
 #CONFIGURAÇÃO BÁSICA DELEGAÇÃO DE PREFIXOS (DHCPv6-PD) ---------------
