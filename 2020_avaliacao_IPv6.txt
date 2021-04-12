@@ -44,14 +44,14 @@ R3_01: 2001:db8:216:3000::1/64
 R3_23: 2001:db8:216:3000::23/64                                                                   
 
 6) Assinante 01 da região 1:
-Interface de acesso:         IPv6:
- REDE_01:
-R1_A01_G:
-
-7) Assinante 64 da região 1:
 Interface de acesso: R1_01 IPv6: 2001:db8:216:1000::1/64
  REDE_01: 2001:db8:216:1010::/64
-R1_A64_G: 2001:db8:216:1010::FFFF/64
+R1_A01_G: 2001:db8:216:1010::FFFF/64
+
+7) Assinante 64 da região 1:
+Interface de acesso: R1_01 IPv6: 2001:db8:216:1000::64/64
+ REDE_01: 2001:db8:216:1640::/64
+R1_A64_G: 2001:db8:216:1640::FFFF/64
 
 ipv6 route 2001:db8:216:1010::/60 2001:db8:216:1000::1
 
