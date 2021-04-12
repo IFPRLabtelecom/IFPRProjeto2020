@@ -282,12 +282,12 @@ ipv6 unicast-routing
 !
 no ipv6 cef
 !
-ipv6 dhcp pool IPv6R1
- prefix-delegation pool IPv6R1 lifetime 2592000 604800
- dns-server 2001:DB8:216:1000::F
+ipv6 dhcp pool IPv6_R1
+ prefix-delegation pool IPv6_R1 lifetime 2592000 604800
+ dns-server 2001:DB8:216:1000::FFFF
 !
 !
-ipv6 local pool IPv6R1 2001:DB8:216:1000::/64 60
+ipv6 local pool IPv6_R1 2001:DB8:216:1000::/64 64
 !
 username OEMGUSTAVO privilege 15 secret 5 $1$mERr$rjoVbtss7/P4pWywmQXiH/
 !
@@ -325,7 +325,7 @@ interface FastEthernet0/1
 interface GigabitEthernet0/0/0
  description DADOS
  ip address 150.100.223.161 255.255.255.240
- ipv6 address 2001:DB8:216::1/52
+ ipv6 address 2001:DB8:216:3::1/64
  ipv6 enable
 !
 interface GigabitEthernet0/1/0
@@ -343,11 +343,12 @@ interface GigabitEthernet0/1/0.2
  ip address 150.100.216.126 255.255.255.192
 !
 interface GigabitEthernet0/1/0.3
- encapsulation dot1Q 3
+ description IPv6_R1
  no ip address
- ipv6 address 2001:DB8:216:1000::F/60
+ ipv6 address 2001:DB8:216:1000::FFFF/64
+ ipv6 nd other-config-flag
  ipv6 enable
- ipv6 dhcp server IPv6R1
+ ipv6 dhcp server IPv6_R1
 !
 interface GigabitEthernet0/1/0.4
  description OEM

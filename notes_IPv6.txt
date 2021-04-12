@@ -1,0 +1,14 @@
+=======================================================================
+      INSTITUTO FEDERAL DO PARANÁ - LABTELECOM     PROJETO FINAL
+      PROF. GUSTAVO THEODORO LASKOSKI, D. Sc.            IPv6
+=======================================================================
+
+#CONFIGURAÇÃO BÁSICA DHCPv6 -------------------------------------------
+Tutorial: https://sites.google.com/a/ifpr.edu.br/gustavothl/tutoriais-e-exemplos/dhcp-ipv6
+
+
+
+
+
+#CONFIGURAÇÃO BÁSICA DELEGAÇÃO DE PREFIXOS (DHCPv6-PD) ---------------
+Video: https://www.youtube.com/watch?v=ocBKfstWMwQ
