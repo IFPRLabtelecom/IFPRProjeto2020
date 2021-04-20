@@ -10,7 +10,7 @@
 
 #dot11 ssid ISP_Rx_Axy, onde Rx e Axy é região e assinante
 
-hostname R3_CPE2_A32
+hostname R2_CPE2_A03
 
 int g0/0/0
 description WAN
@@ -20,7 +20,7 @@ exit
 int g0/0/0.3
 description WAN_DADOS
 ip nat outside
-encapsulation dot1Q 132
+encapsulation dot1Q 103
 ip add dhcp
 no shut
 exit
@@ -51,10 +51,10 @@ default-router 192.168.1.254
 dns-server 192.168.1.254
 exit
 
-dot11 ssid ISP_R3_A32
+dot11 ssid ISP_R2_A03
 authentication open 
 authentication key-management wpa
-wpa-psk ascii ISP_W_R3_A32
+wpa-psk ascii ISP_W_R2_A03
 guest-mode 
 exit
 
@@ -63,7 +63,7 @@ description WLAN1_2G
 ip nat inside
 ip add 192.168.2.254 255.255.255.0
 encryption mode ciphers aes-ccm 
-ssid ISP_R3_A32
+ssid ISP_R2_A03
 no shut
 exit
 
@@ -72,7 +72,7 @@ description WLAN2_5G
 ip nat inside
 ip add 192.168.3.254 255.255.255.0
 encryption mode ciphers aes-ccm 
-ssid ISP_R3_A32
+ssid ISP_R2_A03
 no shut
 exit
 

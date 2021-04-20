@@ -24,6 +24,113 @@ exit
 ipv6 route ::/0 2001:db8:216:3::FFFF
 do wr
 
+=======================================================================
+      INSTITUTO FEDERAL DO PARANÁ - LABTELECOM     PROJETO FINAL
+      PROF. GUSTAVO THEODORO LASKOSKI, D. Sc.            IPv6
+=======================================================================
 
 #CONFIGURAÇÃO BÁSICA DELEGAÇÃO DE PREFIXOS (DHCPv6-PD) ---------------
 Video: https://www.youtube.com/watch?v=ocBKfstWMwQ
+
+
+ipv6 unicast-routing
+
+int g0/0/0.6
+encapsulation dot1q 6
+ipv6 enable
+ipv6 dhcp client pd ISP
+ipv6 add ISP ::3000:0:0:0:32/64
+exit
+
+ipv6 route ::/0 2001:db8:216:3000::FFFF
+
+int f0/0
+description LAN1
+ipv6 enable
+ipv6 add 2001:db8:216:3321::FFFF/64
+ipv6 dhcp server LAN1
+ipv6 nd other-config-flag 
+exit
+
+int f0/1
+description LAN2
+ipv6 enable
+ipv6 add 2001:db8:216:3322::FFFF/64
+ipv6 dhcp server LAN2
+ipv6 nd other-config-flag 
+exit
+
+ipv6 local pool LAN1 2001:db8:216:3321::/64 64
+ipv6 dhcp pool LAN1
+prefix-delegation pool LAN1
+dns-server 2001:db8:216:3321::FFFF
+exit
+
+ipv6 local pool LAN2 2001:db8:216:3322::/64 64
+ipv6 dhcp pool LAN2
+prefix-delegation pool LAN2
+dns-server 2001:db8:216:3322::FFFF
+exit
+
+do wr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ipv6 unicast-routing
+
+#INTERFACE WAN --------------------------
+Router(config)#interface f0/0
+Router(config-if)#ipv6 enable 
+Router(config-if)#ipv6 dhcp client pd ISP
+Router(config-if)#no shut
+Router(config-if)#ipv6 address ISP ::2/64
+Router(config-if)#exit
+
+ipv6 route ::/0 2001:db8:216:1000::FFFF
+
+#INTERFACES LAN E WLAN -----------------------------
+Router(config)#interface f0/1
+Router(config-if)#ipv6 enable 
+Router(config-if)#ipv6 address ISP ::031:0:0:0:FFFF/64
+Router(config-if)#ipv6 dhcp server R3_IPv6
+Router(config-if)#ipv6 nd other-config-flag
+Router(config-if)#no shut
+Router(config-if)#exit
+Router(config)#interface f1/0
+Router(config-if)#ipv6 enable 
+Router(config-if)#ipv6 address ISP ::032:0:0:0:FFFF/64
+Router(config-if)#no shut
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
